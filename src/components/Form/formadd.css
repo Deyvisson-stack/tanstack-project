@@ -1,0 +1,151 @@
+.form-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.form-container {
+  width: 558px;
+  height: 338px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.form h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.form input {
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 98px;
+  resize: none;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.btn-new-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-new {
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.4s;
+}
+
+.btn-new:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+.header-form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeBtn {
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.4s;
+  color: #d82412;
+  font-size: 26px;
+}
+
+.closeBtn:hover {
+  color: #f33118;
+}
+
+.send-post {
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.4s;
+}
+
+.send-post:hover {
+  cursor: pointer;
+  background-color: #479f39;
+  color: #fff;
+}
+
+@media (max-width: 330px) {
+  .form-container {
+    width: 298px;
+    height: 338px;
+    padding: 10px;
+  }
+  .form h1{
+   font-size: 22px;
+  }
+}
+
+@media (min-width: 330px) and (max-width: 380px) {
+  .form-container {
+    width: 328px;
+    height: 338px;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 430px) {
+  .form-container {
+    width: 358px;
+    height: 338px;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 770px) {
+  .form-container {
+    width: 558px;
+    height: 338px;
+    padding: 15px;
+  }
+}
+@media (min-width: 770px) and (max-width: 1030px) {
+  .form-container {
+    width: 558px;
+    height: 338px;
+    padding: 15px;
+  }
+}

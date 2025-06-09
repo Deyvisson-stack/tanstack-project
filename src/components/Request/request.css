@@ -1,0 +1,91 @@
+.request-container {
+  width: 100%;
+}
+
+.request {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, fr);
+  place-items: center;
+  gap: 20px;
+}
+
+.request-item {
+  width: 438px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.request-item h1 {
+  font-size: 28px;
+}
+
+.request-item p {
+  font-size: 18px;
+}
+
+.delete-btn {
+  background-color: #d82412;
+  border: none;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.delete-btn:hover {
+  background-color: #f33118;
+}
+
+@media (max-width: 330px) {
+  .request {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, fr);
+  }
+
+  .request-item {
+    width: 298px;
+  }
+}
+
+@media (min-width: 330px) and (max-width: 380px) {
+  .request {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, fr);
+  }
+  .request-item{
+    width: 328px;
+  }
+}
+@media (min-width: 380px) and (max-width: 430px) {
+  .request {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, fr);
+  }
+  .request-item{
+    width: 358px;
+  }
+}
+@media (min-width: 430px) and (max-width: 770px) {
+  .request {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, fr);
+  }
+  .request-item{
+    width: 338px;
+  }
+}
+@media (min-width: 770px) and (max-width: 1030px) {
+  .request {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, fr);
+  }
+  .request-item{
+    width: 438px;
+  }
+}
